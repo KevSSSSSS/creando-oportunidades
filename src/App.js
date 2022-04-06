@@ -1,24 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Banner from "./components/banner";
-import FormWorker from "./components/formWorker";
-import FormSearch from "./components/formSearch";
+import Login from "./screens/login";
+import Home from "./screens/home";
 
 function App() {
+  const [logueado, setLogueado] = useState(false);
 
-  var screenHeigth = window.innerHeight;
-  console.log(screenHeigth);
-
-  return (
-    <div style={{height: screenHeigth}}>
-      <Banner></Banner>
-      <div className="row" style={{width: "100%", justifyContent: "space-evenly", marginTop: "5%"}}>
-        <FormWorker></FormWorker>
-        <FormSearch></FormSearch>
-      </div>
-      <div style={{background: "#111646", height: 50, color: "#FFF", textAlign: "center", marginTop: 100}}>KevsCorporation 2022 &reg; proyecto para pasar la materia de IS</div>
-    </div>
-  );
+  return { logueado } ? <Home></Home> : <Login></Login>;
 }
 
 export default App;

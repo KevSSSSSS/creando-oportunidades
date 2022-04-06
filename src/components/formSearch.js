@@ -1,19 +1,34 @@
 import React from "react";
+import img2 from "../images/img2.jpg"
+
 function FormSearch() {
   return (
-    <div className="card border-primary mb-3" style={{width: "20%"}}>
+    <div className="card" style={{ width: "20%" }} >
+      <img src={img2} alt="" ></img>
       <div className="card-body">
-        <h5 className="card-title" style={{backgroundColor: "#111646", color: "#FFFFFF", textAlign: "center", borderRadius: 10}}>Buscar</h5>
+        <h5
+          className="card-title"
+          style={{
+            color: "#111646",
+            textAlign: "center",
+            borderRadius: 10,
+          }}
+        >
+          Buscar
+        </h5>
         <h6 className="card-subtitle mb-2 text-muted">Busca un trabajador</h6>
         <p className="card-text">
-          Si necesitas un trabajo de oficio contacta con los muchos trabajadores que hay en nuestra plataforma de forma segura.
+          Si necesitas un trabajo de oficio contacta con los muchos trabajadores
+          que hay en nuestra plataforma de forma segura.
         </p>
-        <a href="#" className="card-link">
-          Iniciar Sesion
-        </a>
-        <a href="#" className="card-link">
-          Registrarse
-        </a>
+        <div className="d-grid gap-2 col-10 mx-auto">
+          <a href="#" className="btn btn-primary">
+            Iniciar Sesion
+          </a>
+          <a href="#" className="btn btn-danger">
+            Registrarse
+          </a>
+        </div>
       </div>
     </div>
   );
