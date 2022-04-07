@@ -24,7 +24,7 @@ function WorkerCardInfo(props) {
     return <div className="containerEmpity">Elige un trabajador</div>;
   } else {
     return (
-      <div class="card">
+      <div class="card m-3">
         <img src={userInfo.photo} class="card-img-top" alt="..."></img>
         <div class="card-body">
           <h5 class="card-title">{userInfo.work}</h5>
