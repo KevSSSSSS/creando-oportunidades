@@ -3,13 +3,14 @@ import logosm from "../images/logoSmall.png";
 
 //Datos obtenidos de la base de datos
 const user = {
-  "name": "Kevin Daniel",
-  "apellidoP": "Flores",
-  "apellidoM": "Lopez",
-  "age": 22,
-  "phone": "7291754034",
-  "photo": "https://scontent.ftlc1-1.fna.fbcdn.net/v/t1.6435-9/41675008_1730112417111859_6064227413720563712_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=CqGliCpvs7MAX_NElcV&_nc_ht=scontent.ftlc1-1.fna&oh=00_AT_i3NdvHSrvh1wm5_VppSwM2JQQwyApat8iThf7an--ig&oe=6271AF0E"
-}
+  name: "Kevin Daniel",
+  apellidoP: "Flores",
+  apellidoM: "Lopez",
+  age: 22,
+  phone: "7291754034",
+  photo:
+    "https://scontent.ftlc1-1.fna.fbcdn.net/v/t1.6435-9/41675008_1730112417111859_6064227413720563712_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=174925&_nc_ohc=CqGliCpvs7MAX_NElcV&_nc_ht=scontent.ftlc1-1.fna&oh=00_AT_i3NdvHSrvh1wm5_VppSwM2JQQwyApat8iThf7an--ig&oe=6271AF0E",
+};
 
 function NavBar() {
   return (
@@ -22,11 +23,7 @@ function NavBar() {
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">
-                <img
-                  src={user.photo}
-                  alt="perfil"
-                  height={30}
-                ></img>
+                <img src={user.photo} alt="perfil" height={30}></img>
               </a>
             </li>
             <li class="nav-item dropdown">
@@ -61,14 +58,7 @@ function NavBar() {
                 </li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Link
-              </a>
-            </li>
+
             <li className="nav-item">
               <form class="d-flex justify-content-center">
                 <input

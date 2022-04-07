@@ -7,7 +7,7 @@ function WorkerCard(props) {
   const { handleInfo } = props;
 
   return workers.map((e) => (
-    <div className="card mb-3">
+    <div className="card m-5 w-75 h-auto shadow-lg" >
       <div className="row g-0">
         <div className="col-md-4">
           <img src={e.photo} className="img-fluid rounded-start" alt=""></img>
@@ -21,6 +21,7 @@ function WorkerCard(props) {
             <p className="card-text">{e.description}</p>
             <p className="card-text">
               <small className="text-muted">{e.date}</small>
+              
               <button
                 onClick={() => {
                   handleInfo(e);

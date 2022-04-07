@@ -27,6 +27,7 @@ function Home() {
           <WorkerCardInfo id={id}></WorkerCardInfo>
         </div>
       </section>
+      <div style={{background: "#111646", height: 50, color: "#FFF", textAlign: "center", marginTop: 20}}>KevsCorporation 2022 &reg; proyecto para pasar la materia de IS</div>
     </div>
   );
 }
