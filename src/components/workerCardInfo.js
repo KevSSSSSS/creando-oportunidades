@@ -20,7 +20,7 @@ function WorkerCardInfo(props) {
     extractInfoUser(id.id);
   }, [id]);
 
-  if (userInfo === "") {
+  if (userInfo == "") {
     return <div className="containerEmpity">Elige un trabajador</div>;
   } else {
     return (
