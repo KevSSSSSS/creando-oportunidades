@@ -27,7 +27,7 @@ function WorkerCard(props) {
                   handleInfo(e);
                 }}
                 type="button"
-                class="btn btn-ligth container"
+                className="btn btn-ligth container"
               >
                 Ver más
               </button>

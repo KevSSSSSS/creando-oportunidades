@@ -1,10 +1,12 @@
 import React from "react";
-import img2 from "../images/img2.jpg"
+import img2 from "../images/img2.jpg";
+import FormModal from "./formModal";
 
-function FormSearch() {
+function FormSearch(props) {
+  const {title} = props;
   return (
-    <div className="card" style={{ width: "20%" }} >
-      <img src={img2} alt="" ></img>
+    <div className="card" style={{ width: "20%" }}>
+      <img src={img2} alt=""></img>
       <div className="card-body">
         <h5
           className="card-title"
@@ -25,9 +27,15 @@ function FormSearch() {
           <a href="#" className="btn btn-primary">
             Iniciar Sesion
           </a>
-          <a href="#" className="btn btn-danger">
+          <a
+            href="#"
+            className="btn btn-danger"
+            data-bs-toggle="modal"
+            data-bs-target="#registerModal"
+          >
             Registrarse
           </a>
+          <FormModal/>
         </div>
       </div>
     </div>

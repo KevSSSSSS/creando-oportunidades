@@ -8,7 +8,7 @@ function MenuCategories(){
         <div className="list-group m-1">
             <h5 className="container">Categorías</h5>
             <hr></hr>  
-            {categorias.map((cat) => <a href="#" class="list-group-item list-group-item-action">{cat}</a>)}
+            {categorias.map((cat) => <a href="#" className="list-group-item list-group-item-action">{cat}</a>)}
         </div>
     );
 }

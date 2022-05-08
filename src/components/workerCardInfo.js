@@ -24,21 +24,21 @@ function WorkerCardInfo(props) {
     return <div className="containerEmpity">Elige un trabajador</div>;
   } else {
     return (
-      <div class="card m-3">
-        <img src={userInfo.photo} class="card-img-top" alt="..."></img>
-        <div class="card-body">
-          <h5 class="card-title">{userInfo.work}</h5>
-          <p class="card-text">{userInfo.description}</p>
+      <div className="card m-3">
+        <img src={userInfo.photo} className="card-img-top" alt="..."></img>
+        <div className="card-body">
+          <h5 className="card-title">{userInfo.work}</h5>
+          <p className="card-text">{userInfo.description}</p>
         </div>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item">
+        <ul className="list-group list-group-flush">
+          <li className="list-group-item">
             Nombre: {userInfo.name} {userInfo.lastname}
           </li>
-          <li class="list-group-item">Dirección: {userInfo.address}</li>
-          <li class="list-group-item">Telefono: {userInfo.phone}</li>
-          <li class="list-group-item">Publicado: {userInfo.date}</li>
+          <li className="list-group-item">Dirección: {userInfo.address}</li>
+          <li className="list-group-item">Telefono: {userInfo.phone}</li>
+          <li className="list-group-item">Publicado: {userInfo.date}</li>
         </ul>
-        <div class="card-body">
+        <div className="card-body">
           <a href="#" className="btn btn-primary">
             Contactar
           </a>
